@@ -1,0 +1,9 @@
+
+Original locations:
+
+```
+debug            tt_metal/hw/inc/debug
+defines          tt_metal/hw/inc/wormhole[/wormhole_b0_defines]
+hostdevcommon    tt_metal/hostdevcommon
+```
+
