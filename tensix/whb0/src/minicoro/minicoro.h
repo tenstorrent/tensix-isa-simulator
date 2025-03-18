@@ -1,4 +1,12 @@
 /*
+ * Copyright (c) 2021 Eduardo Bart <edub4rt@gmail.com>
+ *
+ * SPDX-License-Identifier: Unlicense OR MIT-0
+ *
+ * Tenstorrent is taking this code under the Public Domain (Unlicense) declaration
+ */
+
+/*
 Minimal asymmetric stackful cross-platform coroutine library in pure C.
 minicoro - v0.1.2 - 02/Sep/2021
 Eduardo Bart - edub4rt@gmail.com
