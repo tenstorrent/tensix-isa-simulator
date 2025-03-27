@@ -57,7 +57,7 @@ To build the libraries and examples, set `prj` as your current directory and run
 
 ./build_demo_llk_basic.sh
 ./build_demo_llk_ref.sh
-./build_demo_llk_sfpi_gen.sh
+./build_demo_sfpi_gen.sh
 ```
 
 ## Running reference LLK demo application
@@ -68,7 +68,7 @@ To run the reference LLK demo application, use the command
 ./bin/demo_llk_ref kernel_name
 ```
 
-where `kernel_name` is a name of one of the supported demo kernes:
+where `kernel_name` is a name of one of the supported demo kernels:
 
 ```
 binary_add
