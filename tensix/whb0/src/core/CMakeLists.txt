@@ -1,5 +1,13 @@
+add_library(whb0_core STATIC)
+add_library(whb0::core ALIAS whb0_core)
 
-set(WHB0_CORE_SOURCES
+set_target_properties(whb0_core
+  PROPERTIES
+    OUTPUT_NAME "${WHB0_LIB_PREFIX}core"
+)
+
+target_sources(whb0_core
+  PRIVATE
     addrmod.cpp
     cfg_api.cpp
     cfg.cpp
@@ -15,18 +23,9 @@ set(WHB0_CORE_SOURCES
     unpack.cpp
 )
 
-set(WHB0_CORE_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE STRING "" FORCE)
-set(WHB0_CORE_LIB_NAME "${WHB0_LIB_PREFIX}core" CACHE STRING "" FORCE)
-
-add_library(whb0_core 
-    STATIC
-    ${WHB0_CORE_SOURCES}
-)
-
 target_include_directories(whb0_core 
-    PUBLIC ${WHB0_INCLUDE_DIR}
-    PRIVATE ${WHB0_CORE_INCLUDE_DIR} 
+  PUBLIC
+    ${WHB0_INCLUDE_DIR}
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
-
-set_target_properties(whb0_core PROPERTIES OUTPUT_NAME ${WHB0_CORE_LIB_NAME})
-
