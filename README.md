@@ -1,5 +1,11 @@
 # Tensix ISA simulator
 
+## Archived - No longer supported
+
+This repository is no longer supported.  It's functionality can be found at the [tenstorrent/ttsim](https://github.com/tenstorrent/tt-sim) repository.
+
+## Original README
+
 This repository contains code and materials pertaining to Tensix ISA simulator.
 
 Development of the simulator has two main goals:
